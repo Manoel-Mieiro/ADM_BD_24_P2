@@ -152,7 +152,7 @@ CREATE TYPE "op" AS ENUM (
 );
 
 CREATE TABLE "pedidos" (
-  "id_pedido" integer PRIMARY KEY,
+  "id_pedido" serial PRIMARY KEY,
   "destino" integer,
   "cliente" integer,
   "carrinho" integer,
@@ -169,7 +169,7 @@ CREATE TABLE "pedidos" (
 );
 
 CREATE TABLE "entrega" (
-  "id" integer PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "tipo_entrega" shipping,
   "cep" varchar(8),
   "address" varchar(150),
@@ -237,7 +237,7 @@ CREATE TABLE "cartoes" (
 );
 
 CREATE TABLE "avaliacao_pedido" (
-  "id" integer PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "usuario" integer,
   "produto" integer,
   "qtd_estrelas" stars,
@@ -248,7 +248,7 @@ CREATE TABLE "avaliacao_pedido" (
 );
 
 CREATE TABLE "carrinho" (
-  "id" integer PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "pedido" integer,
   "produto" integer,
   "quantidade" smallint,
@@ -259,7 +259,7 @@ CREATE TABLE "carrinho" (
 );
 
 CREATE TABLE "fornecedores" (
-  "id" integer PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "nome" varchar(100),
   "cnpj" varchar(18),
   "address" varchar(80),
@@ -272,7 +272,7 @@ CREATE TABLE "fornecedores" (
 );
 
 CREATE TABLE "pedidos_arquivados" (
-  "id" integer PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "pedido" integer,
   "nf" integer,
   "data_pedido" datetime,
@@ -286,7 +286,7 @@ CREATE TABLE "pedidos_arquivados" (
 );
 
 CREATE TABLE "armazem" (
-  "id" integer PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "produto_id" integer,
   "cep" varchar(8),
   "address" varchar(150),
@@ -301,7 +301,7 @@ CREATE TABLE "armazem" (
 );
 
 CREATE TABLE "nota_fiscal" (
-  "id" integer PRIMARY KEY,
+  "id" serial PRIMARY KEY,
   "nome_empresa" varchar(70),
   "entrada_saida" boolean,
   "numero_nf" varchar(43),
