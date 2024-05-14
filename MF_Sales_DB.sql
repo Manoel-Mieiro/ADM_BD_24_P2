@@ -156,7 +156,7 @@ CREATE TABLE "pedidos" (
   "destino" integer,
   "cliente" integer,
   "carrinho" integer,
-  "frete" integer,
+  "frete" real,
   "total_carrinho" real,
   "forma_pagamento" payment,
   "cumpom" varchar(12),
@@ -175,8 +175,8 @@ CREATE TABLE "entrega" (
   "address" varchar(150),
   "complemento" varhcar(50),
   "numero" smallint,
-  "uf" UF,
   "estado" states,
+  "uf" UF,
   "bairro" varchar(50),
   "added_at" datetime,
   "updated_at" datetime,
@@ -287,14 +287,12 @@ CREATE TABLE "pedidos_arquivados" (
 
 CREATE TABLE "armazem" (
   "id" serial PRIMARY KEY,
-  "produto_id" integer,
   "cep" varchar(8),
   "address" varchar(150),
   "numero" smallint,
-  "uf" UF,
   "estado" states,
+  "uf" UF,
   "bairro" varchar(50),
-  "capacidade_total" integer,
   "added_at" datetime,
   "updated_at" datetime,
   "deteled_at" datetime
@@ -305,15 +303,15 @@ CREATE TABLE "nota_fiscal" (
   "nome_empresa" varchar(70),
   "entrada_saida" boolean,
   "numero_nf" varchar(43),
-  "chave_acesso" varchar(40),
+  "chave_acesso" varchar(54),
   "natureza_operacao" op,
   "protocolo" varchar(40),
   "cnpj" varchar(18),
   "data_emissao" datetime,
   "address" varchar(150),
   "numero" smallint,
-  "uf" UF,
   "estado" states,
+  "uf" UF,
   "bairro" varchar(50),
   "cep" varchar(8),
   "telefone" integer,
@@ -361,3 +359,7 @@ ALTER TABLE "pedidos" ADD FOREIGN KEY ("id_pedido") REFERENCES "pedidos_arquivad
 ALTER TABLE "nota_fiscal" ADD FOREIGN KEY ("id") REFERENCES "pedidos_arquivados" ("nf");
 
 ALTER TABLE "pedidos" ADD FOREIGN KEY ("id_pedido") REFERENCES "nota_fiscal" ("id");
+
+ALTER TABLE "produtos" ADD FOREIGN KEY ("gramatura") REFERENCES "produtos" ("largura_embalagem");
+
+ALTER TABLE "cartoes" ADD FOREIGN KEY ("ano_validade") REFERENCES "cartoes" ("mes_validade");

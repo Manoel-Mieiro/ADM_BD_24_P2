@@ -1,64 +1,64 @@
--- Fazer resolução de UF baseado na cidade por trigger
+-- FAZER RESOLUÇÃO DE UF BASEADO NA CIDADE POR TRIGGER
 
-CREATE OR REPLACE FUNCTION link_uf_state() RETURNS TRIGGER 
-LANGUAGE plpgsql
+CREATE OR REPLACE FUNCTION LINK_UF_STATE() RETURNS TRIGGER 
+LANGUAGE PLPGSQL
 AS $$
 BEGIN
-    -- Sudeste
-    IF NEW.estado = 'Rio de Janeiro' THEN
-        NEW.uf := 'RJ';
-    ELSE IF NEW.estado = 'São Paulo' THEN
-        NEW.uf := 'SP';
-    ELSE IF NEW.estado = 'Espírito Santo' THEN
-        NEW.uf := 'ES';
-    ELSE IF NEW.estado = 'Minas Gerais' THEN
-        NEW.uf := 'MG';
-    -- Sul
-    ELSE IF NEW.estado = 'Paraná' THEN
-        NEW.uf := 'PR';
-    ELSE IF NEW.estado = 'Santa Catarina' THEN
-        NEW.uf := 'SC';
-    ELSE IF NEW.estado = 'Rio Grande do Sul' THEN
-        NEW.uf := 'RS';
-    -- Centro Oeste
-    ELSE IF NEW.estado = 'Mato Grosso do Sul' THEN
-        NEW.uf := 'MS';
-    ELSE IF NEW.estado = 'Goiânia' THEN
-        NEW.uf := 'GO';
-    ELSE IF NEW.estado = 'Mato Grosso' THEN
-        NEW.uf := 'MT';
-    -- Nordeste
-    ELSE IF NEW.estado = 'Bahia' THEN
-        NEW.uf := 'BA';
-    ELSE IF NEW.estado = 'Sergipe' THEN
-        NEW.uf := 'SE';
-    ELSE IF NEW.estado = 'Alagoas' THEN
-        NEW.uf := 'AL';
-    ELSE IF NEW.estado = 'Pernambuco' THEN
-        NEW.uf := 'PE';
-    ELSE IF NEW.estado = 'Piauí' THEN
-        NEW.uf := 'PI';
-    ELSE IF NEW.estado = 'Maranhão' THEN
-        NEW.uf := 'MA';
-    ELSE IF NEW.estado = 'Paraíba' THEN
-        NEW.uf := 'PB';
-    ELSE IF NEW.estado = 'Rio Grande do Norte' THEN
-        NEW.uf := 'RN';
-    ELSE IF NEW.estado = 'Ceará' THEN
-        NEW.uf := 'CE';
-    -- Norte
-    ELSE IF NEW.estado = 'Rondônia' THEN
-        NEW.uf := 'RO';
-    ELSE IF NEW.estado = 'Amazonas' THEN
-        NEW.uf := 'AM';
-    ELSE IF NEW.estado = 'Tocantins' THEN
-        NEW.uf := 'TO';
-    ELSE IF NEW.estado = 'Pará' THEN
-        NEW.uf := 'PA';
-    ELSE IF NEW.estado = 'Paraíba' THEN
-        NEW.uf := 'PB';
+    -- SUDESTE
+    IF NEW.ESTADO = 'RIO DE JANEIRO' THEN
+        NEW.UF := 'RJ';
+    ELSE IF NEW.ESTADO = 'SÃO PAULO' THEN
+        NEW.UF := 'SP';
+    ELSE IF NEW.ESTADO = 'ESPÍRITO SANTO' THEN
+        NEW.UF := 'ES';
+    ELSE IF NEW.ESTADO = 'MINAS GERAIS' THEN
+        NEW.UF := 'MG';
+    -- SUL
+    ELSE IF NEW.ESTADO = 'PARANÁ' THEN
+        NEW.UF := 'PR';
+    ELSE IF NEW.ESTADO = 'SANTA CATARINA' THEN
+        NEW.UF := 'SC';
+    ELSE IF NEW.ESTADO = 'RIO GRANDE DO SUL' THEN
+        NEW.UF := 'RS';
+    -- CENTRO OESTE
+    ELSE IF NEW.ESTADO = 'MATO GROSSO DO SUL' THEN
+        NEW.UF := 'MS';
+    ELSE IF NEW.ESTADO = 'GOIÂNIA' THEN
+        NEW.UF := 'GO';
+    ELSE IF NEW.ESTADO = 'MATO GROSSO' THEN
+        NEW.UF := 'MT';
+    -- NORDESTE
+    ELSE IF NEW.ESTADO = 'BAHIA' THEN
+        NEW.UF := 'BA';
+    ELSE IF NEW.ESTADO = 'SERGIPE' THEN
+        NEW.UF := 'SE';
+    ELSE IF NEW.ESTADO = 'ALAGOAS' THEN
+        NEW.UF := 'AL';
+    ELSE IF NEW.ESTADO = 'PERNAMBUCO' THEN
+        NEW.UF := 'PE';
+    ELSE IF NEW.ESTADO = 'PIAUÍ' THEN
+        NEW.UF := 'PI';
+    ELSE IF NEW.ESTADO = 'MARANHÃO' THEN
+        NEW.UF := 'MA';
+    ELSE IF NEW.ESTADO = 'PARAÍBA' THEN
+        NEW.UF := 'PB';
+    ELSE IF NEW.ESTADO = 'RIO GRANDE DO NORTE' THEN
+        NEW.UF := 'RN';
+    ELSE IF NEW.ESTADO = 'CEARÁ' THEN
+        NEW.UF := 'CE';
+    -- NORTE
+    ELSE IF NEW.ESTADO = 'RONDÔNIA' THEN
+        NEW.UF := 'RO';
+    ELSE IF NEW.ESTADO = 'AMAZONAS' THEN
+        NEW.UF := 'AM';
+    ELSE IF NEW.ESTADO = 'TOCANTINS' THEN
+        NEW.UF := 'TO';
+    ELSE IF NEW.ESTADO = 'PARÁ' THEN
+        NEW.UF := 'PA';
+    ELSE IF NEW.ESTADO = 'PARAÍBA' THEN
+        NEW.UF := 'PB';
     ELSE
-        RAISE EXCEPTION 'Estado inválido';
+        RAISE EXCEPTION 'ESTADO INVÁLIDO';
     END IF;
     
     RETURN NEW;
@@ -66,20 +66,20 @@ END;
 $$;
 
 
--- Trigger para a tabela entrega
-CREATE TRIGGER resolve_uf_entrega
-BEFORE INSERT OR UPDATE ON entrega
+-- TRIGGER PARA A TABELA ENTREGA
+CREATE TRIGGER RESOLVE_UF_ENTREGA
+BEFORE INSERT OR UPDATE ON ENTREGA
 FOR EACH ROW
-EXECUTE FUNCTION link_uf_state();
+EXECUTE FUNCTION LINK_UF_STATE();
 
--- Trigger para a tabela fornecedores
-CREATE TRIGGER resolve_uf_fornecedores
-BEFORE INSERT OR UPDATE ON fornecedores
+-- TRIGGER PARA A TABELA FORNECEDORES
+CREATE TRIGGER RESOLVE_UF_FORNECEDORES
+BEFORE INSERT OR UPDATE ON FORNECEDORES
 FOR EACH ROW
-EXECUTE FUNCTION link_uf_state();
+EXECUTE FUNCTION LINK_UF_STATE();
 
--- Trigger para a tabela armazem
-CREATE TRIGGER resolve_uf_armazem
-BEFORE INSERT OR UPDATE ON armazem
+-- TRIGGER PARA A TABELA ARMAZEM
+CREATE TRIGGER RESOLVE_UF_ARMAZEM
+BEFORE INSERT OR UPDATE ON ARMAZEM
 FOR EACH ROW
-EXECUTE FUNCTION link_uf_state();
+EXECUTE FUNCTION LINK_UF_STATE();
