@@ -1,0 +1,22 @@
+-- FAZER UMA VIEW EM PEDIDOS QUE RETORNA O TOTAL GASTO PELO CLIENTE COM MAIS PEDIDOS FEITOS
+CREATE VIEW gastos_cliente_n1 AS
+SELECT
+    CLIENTE_ID,
+    SUM(TOTAL_GASTO) AS TOTAL_GASTO
+FROM
+    PEDIDOS
+WHERE
+    CLIENTE_ID = (
+        SELECT
+            CLIENTE_ID
+        FROM
+            PEDIDOS
+        GROUP BY
+            CLIENTE_ID
+        ORDER BY
+            COUNT(*) DESC
+        LIMIT
+            1
+    )
+GROUP BY
+    CLIENTE_ID;
