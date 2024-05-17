@@ -193,7 +193,7 @@ CREATE TABLE "produtos" (
   "tipo" types,
   "descricao" varchar(100),
   "altura_embalagem" real,
-  "largura_embalagem" reak,
+  "largura_embalagem" real,
   "comprimento_embalagem" real,
   "peso" real,
   "qtd_folhas" smallint,
