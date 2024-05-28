@@ -4,6 +4,7 @@ set -e
 function customize {
 #	id
 	cp -R /tmp/.ssh/* /root/.ssh/
+#	cp -R $(pwd)/data/postgresql/sshkeys/* /root/.ssh
 #	ls -ltr /tmp/.ssh
 #	ls -ltr /root/.ssh
 	chmod 700 /root/.ssh

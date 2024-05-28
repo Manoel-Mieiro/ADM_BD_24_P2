@@ -27,7 +27,7 @@ services:
       - "-c"
       - "wal_level=hot_standby"
       - "-c"
-      - "port=5432"
+      - "port=5432" 
       - "-c"
       - "hba_file=/var/lib/postgresql/config/pg_hba.conf"
       - "-c"
@@ -46,6 +46,18 @@ services:
     networks:
       - spectre-network-test
     restart: always
+
+  pgadmin-compose:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "diego.castro@cefet-rj.br"
+      PGADMIN_DEFAULT_PASSWORD: "postgres"
+    ports:
+      - "16543:80"
+    depends_on:
+      - postgres-source-db
+    networks:
+      - spectre-network-test
 
 
   pg-barman:
