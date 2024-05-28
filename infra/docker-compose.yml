@@ -58,7 +58,7 @@ services:
       - postgres-source-db
     networks:
       - spectre-network-test
-
+    restart: always
 
   pg-barman:
     hostname: pg-barman
