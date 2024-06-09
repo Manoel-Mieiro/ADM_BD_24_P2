@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  app:
+    container_name: nifi
+    hostname: nifi
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: nifi
+    ports:
+      - 8081:8080
+      - 8443:8443
+    environment:
+      NIFI_WEB_HTTP_PORT: "8080"
+      NIFI_WEB_HTTPS_PORT: "8443"
+      SINGLE_USER_CREDENTIALS_USERNAME: "admin" 
+      SINGLE_USER_CREDENTIALS_PASSWORD: "admin"
+    volumes:
+      - data:/opt/nifi:rw
+    networks:
+      - net
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "2"
+        max-size: "25m"
+    cpus: 2
+    mem_limit: 2g
+    memswap_limit: 2g
+    shm_size: 256m
+    restart: always
+
+volumes:
+  data:
+   name: nifi-data
+   driver: local
+
+networks:
+  net:
+    name: nifi-net
+    driver: bridge

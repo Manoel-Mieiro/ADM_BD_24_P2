@@ -1,1 +1,1 @@
-CREATE INDEX idx_uf ON armazem (uf) WHERE uf IN ('SP', 'MG', 'PR'); --As UFs em questão devem representar a maioria por serem as mais pontos de estocagem estratégicos da empresa, portanto mais usados que as demais UFs
+CREATE INDEX idx_uf_storage ON armazem (uf) WHERE uf IN ('SP', 'MG', 'PR'); --As UFs em questão devem representar a maioria por serem as mais pontos de estocagem estratégicos da empresa, portanto mais usados que as demais UFs
