@@ -1,5 +1,11 @@
 version: '3.2'
 
+networks:
+  postgresql-barman-net:
+    name: temboard-net 
+    external: true
+      #name: temboard-net
+
 volumes:
   pg-data:
     name: postgres-source-db-pgdata
@@ -9,7 +15,7 @@ services:
   postgres-source-db:
     hostname: postgres-source-db
     extra_hosts:
-      - "barman:192.168.250.162"
+      - "barman:192.168.1.245"
     container_name: postgres-source-db
     image: postgres-source-db:latest
     build:
@@ -57,7 +63,10 @@ services:
       options:
         max-size: "100k"
         max-file: "5"
+    networks:
+      - postgresql-barman-net
     restart: always
+
   pgadmin-compose:
       image: dpage/pgadmin4
       environment:
@@ -67,5 +76,7 @@ services:
         - "16543:80"
       depends_on:
         - postgres-source-db
+      networks:
+        - postgresql-barman-net    
       restart: always
  
