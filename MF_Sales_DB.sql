@@ -8,7 +8,7 @@ CREATE TYPE "caterers" AS ENUM (
   'IP',
   'TF'
 );
-
+ 
 CREATE TYPE "brands" AS ENUM (
   'Greenbag',
   'Greenpack',
@@ -29,7 +29,7 @@ CREATE TYPE "brands" AS ENUM (
   'AASUPREMO',
   'DDSUPREMO'
 );
-
+ 
 CREATE TYPE "types" AS ENUM (
   'PapelCartão',
   'nRevestido',
@@ -37,7 +37,7 @@ CREATE TYPE "types" AS ENUM (
   'CutSize',
   'Especial'
 );
-
+ 
 CREATE TYPE "colors" AS ENUM (
   'branco',
   'cinza',
@@ -50,8 +50,8 @@ CREATE TYPE "colors" AS ENUM (
   'vermelho',
   'roxo'
 );
-
-CREATE TYPE "UF" AS ENUM (
+ 
+CREATE TYPE "unif" AS ENUM (
   'RJ',
   'SP',
   'ES',
@@ -79,7 +79,7 @@ CREATE TYPE "UF" AS ENUM (
   'AP',
   'RR'
 );
-
+ 
 CREATE TYPE "states" AS ENUM (
   'Rio de Janeiro',
   'São Paulo',
@@ -107,25 +107,25 @@ CREATE TYPE "states" AS ENUM (
   'Amapá',
   'RO'
 );
-
+ 
 CREATE TYPE "payment" AS ENUM (
   'Cartão de Crédito',
   'Cartão de Débito',
   'Boleto Bancário',
   'PIX'
 );
-
+ 
 CREATE TYPE "shipping" AS ENUM (
   'Retirar',
   'Standard',
   'Premium'
 );
-
+ 
 CREATE TYPE "cards" AS ENUM (
   'Débito',
   'Crédito'
 );
-
+ 
 CREATE TYPE "stars" AS ENUM (
   '1',
   '2',
@@ -133,7 +133,7 @@ CREATE TYPE "stars" AS ENUM (
   '4',
   '5'
 );
-
+ 
 CREATE TYPE "banks" AS ENUM (
   'Itaú',
   'Santander',
@@ -145,12 +145,12 @@ CREATE TYPE "banks" AS ENUM (
   'BTG',
   'Banrisul'
 );
-
+ 
 CREATE TYPE "op" AS ENUM (
   'Compra',
   'Venda'
 );
-
+ 
 CREATE TABLE "pedidos" (
   "id_pedido" serial PRIMARY KEY,
   "destino" integer,
@@ -159,39 +159,39 @@ CREATE TABLE "pedidos" (
   "frete" real,
   "total_carrinho" real,
   "forma_pagamento" payment,
-  "cumpom" varchar(12),
+  "cumpom" VARCHAR(12),
   "valor_desconto" real,
   "total_a_pagar" real,
   "confirmacao_pagamento" boolean,
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "entrega" (
   "id" serial PRIMARY KEY,
   "tipo_entrega" shipping,
-  "cep" varchar(8),
-  "address" varchar(150),
-  "complemento" varhcar(50),
+  "cep" VARCHAR(8),
+  "address" VARCHAR(150),
+  "complemento" VARCHAR(50),
   "numero" smallint,
   "estado" states,
-  "uf" UF,
-  "bairro" varchar(50),
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "uf" unif,
+  "bairro" VARCHAR(50),
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "produtos" (
   "id" serial PRIMARY KEY,
   "local" integer,
   "fornecedor" integer,
   "quantidade_estoque" smallint,
-  "codigo_barras" varchar(13),
+  "codigo_barras" VARCHAR(13),
   "marca" brands,
   "tipo" types,
-  "descricao" varchar(100),
+  "descricao" VARCHAR(100),
   "altura_embalagem" real,
   "largura_embalagem" real,
   "comprimento_embalagem" real,
@@ -203,118 +203,118 @@ CREATE TABLE "produtos" (
   "comprimento_folha" real,
   "valor_compra" real,
   "valor_venda" real,
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "clientes" (
   "id" serial PRIMARY KEY,
-  "nome" varchar(80),
-  "cpf" varchar(11),
-  "email" varchar(80),
-  "telefone" varchar(11),
-  "cartao" varchar(30),
-  "senha" varchar(30),
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "nome" VARCHAR(80),
+  "cpf" VARCHAR(11),
+  "email" VARCHAR(80),
+  "telefone" VARCHAR(11),
+  "cartao" VARCHAR(30),
+  "senha" VARCHAR(30),
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "cartoes" (
   "id" serial PRIMARY KEY,
-  "cliente" int,
+  "cliente" int REFERENCES clientes(id),
   "banco" banks,
-  "numero" varchar(16),
+  "numero" VARCHAR(16),
   "tipo" cards,
   "mes_validade" smallint,
   "ano_validade" smallint,
-  "nome_titular" varchar(40),
+  "nome_titular" VARCHAR(40),
   "cod_verificacao" smallint,
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "avaliacao_pedido" (
   "id" serial PRIMARY KEY,
   "usuario" integer,
   "produto" integer,
   "qtd_estrelas" stars,
-  "descricao" varchar(100),
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "descricao" VARCHAR(100),
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "carrinho" (
   "id" serial PRIMARY KEY,
   "pedido" integer,
   "produto" integer,
   "quantidade" smallint,
   "preco_total_produto" real,
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "fornecedores" (
   "id" serial PRIMARY KEY,
-  "nome" varchar(100),
-  "cnpj" varchar(18),
-  "address" varchar(80),
-  "cep" varchar(8),
+  "nome" VARCHAR(100),
+  "cnpj" VARCHAR(18),
+  "address" VARCHAR(80),
+  "cep" VARCHAR(8),
   "estado" states,
-  "uf" UF,
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "uf" unif,
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "pedidos_arquivados" (
   "id" serial PRIMARY KEY,
   "pedido" integer,
   "nf" integer,
-  "data_pedido" datetime,
+  "data_pedido" date,
   "cliente" integer,
   "carrinho" integer,
   "forma_pagamento" payment,
   "total_a_pagar" real,
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "armazem" (
   "id" serial PRIMARY KEY,
-  "cep" varchar(8),
-  "address" varchar(150),
+  "cep" VARCHAR(8),
+  "address" VARCHAR(150),
   "numero" smallint,
   "estado" states,
-  "uf" UF,
-  "bairro" varchar(50),
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "uf" unif,
+  "bairro" VARCHAR(50),
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
-
+ 
 CREATE TABLE "nota_fiscal" (
   "id" serial PRIMARY KEY,
-  "nome_empresa" varchar(70),
+  "nome_empresa" VARCHAR(70),
   "entrada_saida" boolean,
-  "numero_nf" varchar(43),
-  "chave_acesso" varchar(54),
+  "numero_nf" VARCHAR(43),
+  "chave_acesso" VARCHAR(54),
   "natureza_operacao" op,
-  "protocolo" varchar(40),
-  "cnpj" varchar(18),
-  "data_emissao" datetime,
-  "address" varchar(150),
+  "protocolo" VARCHAR(40),
+  "cnpj" VARCHAR(18),
+  "data_emissao" date,
+  "address" VARCHAR(150),
   "numero" smallint,
   "estado" states,
-  "uf" UF,
-  "bairro" varchar(50),
-  "cep" varchar(8),
-  "telefone" integer,
+  "uf" unif,
+  "bairro" VARCHAR(50),
+  "cep" VARCHAR(8),
+  "telefone" VARCHAR(15),
   "base_icms" real,
   "valor_icms" real,
   "valor_frete" real,
@@ -322,44 +322,104 @@ CREATE TABLE "nota_fiscal" (
   "total_tributos" real,
   "total_produtos" real,
   "total_nf" real,
-  "added_at" datetime,
-  "updated_at" datetime,
-  "deteled_at" datetime
+  "added_at" date,
+  "updated_at" date,
+  "deleted_at" date
 );
 
-ALTER TABLE "pedidos" ADD FOREIGN KEY ("cliente") REFERENCES "clientes" ("id");
+--FK em pedidos
+-- Adicionando chave estrangeira para a tabela 'entrega'
+ALTER TABLE "pedidos" 
+ADD CONSTRAINT fk_destino
+FOREIGN KEY ("destino") REFERENCES "entrega"("id");
 
-ALTER TABLE "pedidos" ADD FOREIGN KEY ("destino") REFERENCES "entrega" ("id");
+-- Adicionando chave estrangeira para a tabela 'clientes'
+ALTER TABLE "pedidos" 
+ADD CONSTRAINT fk_cliente
+FOREIGN KEY ("cliente") REFERENCES "clientes"("id");
 
-ALTER TABLE "produtos" ADD FOREIGN KEY ("local") REFERENCES "armazem" ("id");
-
-ALTER TABLE "fornecedores" ADD FOREIGN KEY ("id") REFERENCES "produtos" ("fornecedor");
-
-CREATE TABLE "clientes_cartoes" (
-  "clientes_cartao" varchar(30),
-  "cartoes_id" serial,
-  PRIMARY KEY ("clientes_cartao", "cartoes_id")
-);
-
-ALTER TABLE "clientes_cartoes" ADD FOREIGN KEY ("clientes_cartao") REFERENCES "clientes" ("cartao");
-
-ALTER TABLE "clientes_cartoes" ADD FOREIGN KEY ("cartoes_id") REFERENCES "cartoes" ("id");
+-- Adicionando chave estrangeira para a tabela 'carrinho'
+ALTER TABLE "pedidos" 
+ADD CONSTRAINT fk_carrinho
+FOREIGN KEY ("carrinho") REFERENCES "carrinho"("id");
 
 
-ALTER TABLE "avaliacao_pedido" ADD FOREIGN KEY ("usuario") REFERENCES "clientes" ("id");
 
-ALTER TABLE "avaliacao_pedido" ADD FOREIGN KEY ("produto") REFERENCES "produtos" ("id");
+--FK on avalicao_pedido
+-- Adicionando chave estrangeira para a tabela 'clientes'
+ALTER TABLE "avaliacao_pedido" 
+ADD CONSTRAINT fk_usuario
+FOREIGN KEY ("usuario") REFERENCES "clientes"("id");
 
-ALTER TABLE "pedidos" ADD FOREIGN KEY ("id_pedido") REFERENCES "carrinho" ("pedido");
+-- Adicionando chave estrangeira para a tabela 'produtos'
+ALTER TABLE "avaliacao_pedido" 
+ADD CONSTRAINT fk_produto
+FOREIGN KEY ("produto") REFERENCES "produtos"("id");
 
-ALTER TABLE "produtos" ADD FOREIGN KEY ("id") REFERENCES "carrinho" ("produto");
 
-ALTER TABLE "pedidos" ADD FOREIGN KEY ("id_pedido") REFERENCES "pedidos_arquivados" ("pedido");
+-- FK on carrinho
+-- Adicionando chave estrangeira para a tabela 'pedidos'
+ALTER TABLE "carrinho" 
+ADD CONSTRAINT fk_pedido
+FOREIGN KEY ("pedido") REFERENCES "pedidos"("id_pedido");
 
-ALTER TABLE "nota_fiscal" ADD FOREIGN KEY ("id") REFERENCES "pedidos_arquivados" ("nf");
+-- Adicionando chave estrangeira para a tabela 'produtos'
+ALTER TABLE "carrinho" 
+ADD CONSTRAINT fk_produto
+FOREIGN KEY ("produto") REFERENCES "produtos"("id");
 
-ALTER TABLE "pedidos" ADD FOREIGN KEY ("id_pedido") REFERENCES "nota_fiscal" ("id");
 
-ALTER TABLE "produtos" ADD FOREIGN KEY ("gramatura") REFERENCES "produtos" ("largura_embalagem");
+-- Adicionando chave estrangeira para a tabela 'armazem'
+ALTER TABLE "produtos" 
+ADD CONSTRAINT fk_local
+FOREIGN KEY ("local") REFERENCES "armazem"("id");
 
-ALTER TABLE "cartoes" ADD FOREIGN KEY ("ano_validade") REFERENCES "cartoes" ("mes_validade");
+-- Adicionando chave estrangeira para a tabela 'fornecedores'
+ALTER TABLE "produtos" 
+ADD CONSTRAINT fk_fornecedor
+FOREIGN KEY ("fornecedor") REFERENCES "fornecedores"("id");
+
+
+--Adaptando antiga coluna de cartao como FK na tabela clientes
+-- Removendo a coluna "cliente" antiga
+ALTER TABLE "cartoes"
+DROP COLUMN "cliente";
+
+-- Removendo a coluna "cartao" antiga
+ALTER TABLE "clientes"
+DROP COLUMN "cartao";
+
+-- Adicionando uma nova coluna de chave estrangeira para a tabela "clientes"
+ALTER TABLE "clientes" 
+ADD COLUMN "cartao" int;
+
+-- Adicionando a restrição de chave estrangeira para a nova coluna "cartao"
+ALTER TABLE "clientes" 
+ADD CONSTRAINT fk_cartao
+FOREIGN KEY ("cartao") REFERENCES "cartoes"("id");
+
+
+
+
+
+-- Removendo a restrição de chave estrangeira para o campo 'cliente' na tabela cartoes
+ALTER TABLE "cartoes" 
+DROP CONSTRAINT IF EXISTS cartoes_cliente_fkey;
+
+
+-- FK on pedidos arquivados
+-- Adicionando chave estrangeira para a tabela 'pedidos'
+ALTER TABLE "pedidos_arquivados" 
+ADD CONSTRAINT fk_pedido_archive
+FOREIGN KEY ("pedido") REFERENCES "pedidos"("id_pedido");
+
+-- Adicionando chave estrangeira para a tabela 'nota_fiscal'
+ALTER TABLE "pedidos_arquivados" 
+ADD CONSTRAINT fk_pedido_nf_archive
+FOREIGN KEY ("nf") REFERENCES "nota_fiscal"("id");
+
+-- Adicionando chave estrangeira para a tabela 'clientes'
+ALTER TABLE "pedidos_arquivados" 
+ADD CONSTRAINT fk_pedido_cliente_archive
+FOREIGN KEY ("cliente") REFERENCES "clientes"("id");
+
