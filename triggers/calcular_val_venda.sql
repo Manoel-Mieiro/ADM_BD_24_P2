@@ -4,7 +4,7 @@ DECLARE
     percentual real := 0.31;
 BEGIN
     NEW.valor_venda := NEW.valor_compra*(1+percentual);
-    RETURN NEW.valor_compra;
+    RETURN NEW;
 END;
 $$ LANGUAGE PLPGSQL;
 

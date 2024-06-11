@@ -338,10 +338,6 @@ ALTER TABLE "pedidos"
 ADD CONSTRAINT fk_cliente
 FOREIGN KEY ("cliente") REFERENCES "clientes"("id");
 
--- Adicionando chave estrangeira para a tabela 'carrinho'
-ALTER TABLE "pedidos" 
-ADD CONSTRAINT fk_carrinho
-FOREIGN KEY ("carrinho") REFERENCES "carrinho"("id");
 
 
 
