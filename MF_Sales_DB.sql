@@ -355,14 +355,16 @@ FOREIGN KEY ("produto") REFERENCES "produtos"("id");
 
 -- FK on carrinho
 -- Adicionando chave estrangeira para a tabela 'pedidos'
-ALTER TABLE "carrinho" 
-ADD CONSTRAINT fk_pedido
-FOREIGN KEY ("pedido") REFERENCES "pedidos"("id_pedido");
+ALTER TABLE "pedidos"
+ADD COLUMN carrinho INTEGER
+ALTER TABLE "pedidos" 
+ADD CONSTRAINT fk_carrinho
+FOREIGN KEY ("carrinho") REFERENCES "carrinho"("id");
 
+-- Removendo fk de carrinho
 -- Adicionando chave estrangeira para a tabela 'produtos'
 ALTER TABLE "carrinho" 
-ADD CONSTRAINT fk_produto
-FOREIGN KEY ("produto") REFERENCES "produtos"("id");
+DROP COLUMN pedido 
 
 
 -- Adicionando chave estrangeira para a tabela 'armazem'
