@@ -16,8 +16,23 @@ function customize {
 	/usr/sbin/sshd 2>&1
 }
 
+function runTemboardAgente {
+	sleep 15
+	if [ ! -f "/var/lib/postgresql/data/configured" ]
+	then
+		/usr/local/share/temboard-agent/purge.sh data/pgdata;
+		/usr/local/share/temboard-agent/auto_configure.sh http://temboard:3010;
+		sudo -u postgres temboard-agent -c /etc/temboard-agent/data/pgdata/temboard-agent.conf fetch-key --force;
+	else
+		echo "Temboard Agente Configured"
+	fi;
+    sudo -u postgres temboard-agent -c /etc/temboard-agent/data/pgdata/temboard-agent.conf;
+}
+
 customize  &
 
+runTemboardAgente &
+
 /usr/local/bin/docker-entrypoint.sh "$@" &
-#/usr/local/bin/docker-entrypoint.sh "postgres" "-c" "wal_level=hot_standby" "-c" "port=5432" "-c" "hba_file=/var/lib/postgresql/config/pg_hba.conf" "-c" "archive_mode=on" "-c" "archive_command=barman-wal-archive -U root --port 222 barman postgres %p" "-c" "max_wal_senders=2" "-c" "max_replication_slots=2" "-c" "log_directory=/var/lib/postgresql/data/log" "-c" "log_filename=postgresql.log" &
-sleep infinity #O spam no restore é por conta disso. O sleep infinity fica tentando a pgdata antiga.
+
+sleep infinity 

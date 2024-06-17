@@ -26,12 +26,4 @@ function drop_hard(){
     docker builder prune -f;
 }
 
-function addServers(){
-    COMMAND='sudo -u ${POSTGRES_USER} temboard-agent -c /etc/temboard-agent/data/pgdata/temboard-agent.conf register --groups default';
-    docker exec -it postgres12 bash -c "$(echo $COMMAND)";
-    docker exec -it postgres13 bash -c "$(echo $COMMAND)";
-    docker exec -it postgres14 bash -c "$(echo $COMMAND)";
-    docker exec -it postgres-source-db bash -c "$(echo $COMMAND)";
-}
-
 $1

@@ -12,10 +12,42 @@ RUN ln -s ${INITDB} /usr/local/bin/initdb; \
 ENV POSTGRES_USER dbadmin	 
 ENV POSTGRES_DB db
 ENV POSTGRES_PASSWORD senha
+ENV POSTGRES_NAME "postgres14"
 
+# Temboard Agent
+ENV TEMBOARD_AGENT_VERSION "821"
+ENV TEMBOARD_PORT "2345"
+ENV PGUSER ${POSTGRES_USER}
+ENV PGPASSWORD ${POSTGRES_PASSWORD}
+ENV PGDATABASE ${POSTGRES_DB}
+ENV PGHOST /var/run/postgresql
+ENV TEMBOARD_HOSTNAME "postgres14.host"
 
 # SSH Setup
-RUN apt-get update && apt-get install -y barman-cli openssh-server rsync && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    barman-cli \
+    openssh-server \
+    rsync \
+	sudo build-essential \
+    libncursesw5-dev \
+    libxml2-dev \
+    libgdal-dev \
+    libproj-dev \
+    libjson-c-dev \
+    xsltproc \
+    docbook-xsl \
+    docbook-mathml \
+    libpq-dev \
+    protobuf-c-compiler \
+    libjsoncpp-dev \
+    libprotobuf-dev \
+    libprotobuf-c-dev \
+    proj-bin \
+    python3-pip python3-setuptools python3-dev; \
+	whereis python3 && ln -s /usr/bin/python3 /usr/bin/python && \
+	python3 -m pip install logutils argparse psycopg2 temboard-agent=="8.2.1" --break-system-packages && \
+    rm -rf /var/lib/apt/lists/*
+    
 RUN mkdir -p /var/run/sshd
 RUN echo 'root:password' | chpasswd
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config

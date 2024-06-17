@@ -4,7 +4,6 @@ networks:
   postgresql-barman-net:
     name: temboard-net 
     external: true
-      #name: temboard-net
 
 volumes:
   pg-data:
@@ -16,6 +15,7 @@ services:
     hostname: postgres-source-db
     extra_hosts:
       - "barman:192.168.1.245"
+      - "temboard:192.168.1.5"
     container_name: postgres-source-db
     image: postgres-source-db:latest
     build:
@@ -26,8 +26,9 @@ services:
       PGDATA: "/var/lib/postgresql/data/pgdata"
       PGPORT: "5432"
     ports:
-    - "6432:5432"
-    - "222:22"
+      - "6432:5432"
+      - "222:22"
+      - "2345:2345"
     volumes:
       - type: volume
         source: pg-data
@@ -58,6 +59,12 @@ services:
       - "log_directory=/var/lib/postgresql/data/log"
       - "-c"
       - "log_filename=postgresql.log"
+      - "-c"
+      - "shared_preload_libraries=pg_stat_statements"
+      - "-c"
+      - "pg_stat_statements.track=all"
+      - "-c"
+      - "pg_stat_statements.max=10000"
     logging:
       driver: "json-file"
       options:
@@ -68,15 +75,12 @@ services:
     restart: always
 
   pgadmin-compose:
-      image: dpage/pgadmin4
-      environment:
-        PGADMIN_DEFAULT_EMAIL: "diego.castro@cefet-rj.br"
-        PGADMIN_DEFAULT_PASSWORD: "postgres"
-      ports:
-        - "16543:80"
-      depends_on:
-        - postgres-source-db
-      networks:
-        - postgresql-barman-net    
-      restart: always
- 
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "diego.castro@cefet-rj.br"
+      PGADMIN_DEFAULT_PASSWORD: "postgres"
+    ports:
+      - "16543:80"
+    networks:
+      - postgresql-barman-net
+    restart: always
