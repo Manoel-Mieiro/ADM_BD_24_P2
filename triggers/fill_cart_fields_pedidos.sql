@@ -12,4 +12,4 @@ $$ LANGUAGE PLPGSQL;
 CREATE OR REPLACE TRIGGER fill_cart_fields_produtos
 AFTER INSERT OR UPDATE ON carrinho
 FOR EACH ROW
-EXECUTE FUNCTION update_order();
+EXECUTE FUNCTION update_order();''

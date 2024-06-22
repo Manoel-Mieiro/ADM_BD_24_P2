@@ -1,0 +1,268 @@
+2024-06-21 22:00:08,503 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:00:08,506 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:00:26,666 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:00:26,666 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:00:28,507 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:00:28,507 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:00:48,508 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:00:48,508 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:01:08,509 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:01:08,511 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:01:26,695 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:01:26,696 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:01:28,512 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:01:28,513 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:01:48,513 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:01:48,514 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:02:08,514 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:02:08,515 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:02:26,729 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:02:26,730 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:02:28,515 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:02:28,516 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:02:48,517 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:02:48,517 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:03:08,517 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:03:08,518 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:03:26,764 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:03:26,765 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:03:28,518 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:03:28,519 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:03:48,520 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:03:48,520 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:04:08,521 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:04:08,521 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:04:26,772 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:04:26,772 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:04:28,522 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:04:28,522 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:04:48,522 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:04:48,523 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:05:08,523 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:05:08,524 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:05:26,803 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:05:26,804 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:05:28,524 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:05:28,524 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:05:48,525 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:05:48,525 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:06:08,526 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:06:08,527 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:06:26,848 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:06:26,849 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:06:28,527 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:06:28,528 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:06:48,528 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:06:48,528 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:07:08,529 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:07:08,529 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:07:26,867 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:07:26,868 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:07:28,531 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:07:28,531 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:07:48,532 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:07:48,532 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:08:08,533 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:08:08,534 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:08:26,905 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:08:26,906 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:08:28,536 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:08:28,536 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:08:48,536 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:08:48,537 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:09:08,538 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:09:08,538 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:09:26,936 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:09:26,936 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:09:28,539 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:09:28,539 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:09:48,540 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:09:48,540 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:10:08,541 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:10:08,542 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:10:26,965 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:10:26,965 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:10:28,542 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:10:28,543 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:10:48,544 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:10:48,545 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:11:08,545 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:11:08,546 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:11:26,995 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:11:26,995 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:11:28,546 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:11:28,546 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:11:48,547 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:11:48,547 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:12:08,548 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:12:08,548 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:12:27,024 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:12:27,025 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:12:28,548 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:12:28,549 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:12:48,549 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:12:48,550 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:13:08,550 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:13:08,551 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:13:27,053 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:13:27,053 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:13:28,551 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:13:28,552 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:13:48,553 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:13:48,553 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:14:08,553 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:14:08,554 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:14:27,083 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:14:27,083 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:14:28,554 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:14:28,554 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:14:48,555 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:14:48,555 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:15:08,556 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:15:08,556 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:15:27,092 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:15:27,092 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:15:28,557 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:15:28,557 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:15:48,557 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:15:48,558 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:16:08,558 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:16:08,559 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:16:27,104 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:16:27,105 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:16:28,559 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:16:28,559 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:16:48,560 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:16:48,560 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:17:08,561 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:17:08,561 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:17:27,135 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:17:27,136 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:17:28,562 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:17:28,562 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:17:48,562 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:17:48,563 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:18:08,563 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:18:08,563 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:18:27,155 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:18:27,155 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:18:28,563 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:18:28,563 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:18:48,564 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:18:48,564 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:19:08,565 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:19:08,566 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:19:27,163 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:19:27,164 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:19:28,567 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:19:28,567 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:19:48,567 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:19:48,567 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:20:04,504 INFO [NiFi Web Server-162] o.a.nifi.groups.StandardProcessGroup QueryDatabaseTable[id=3d876f90-0190-1000-fa30-0abf5a60ee66] added to StandardProcessGroup[identifier=3c9c32ff-0190-1000-765b-ab7fbb284753,name=NiFi Flow]
+2024-06-21 22:20:04,632 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@36ae7655 // Another save pending = false
+2024-06-21 22:20:08,567 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:20:08,568 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:20:27,173 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:20:27,173 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:20:28,569 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:20:28,569 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:20:48,570 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:20:48,570 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:21:08,570 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:21:08,571 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:21:27,202 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:21:27,202 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:21:28,572 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:21:28,572 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:21:48,573 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:21:48,573 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:22:08,573 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:22:08,574 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:22:20,191 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@36ae7655 // Another save pending = false
+2024-06-21 22:22:27,212 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:22:27,212 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:22:28,575 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:22:28,575 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:22:33,874 INFO [NiFi Web Server-151] o.a.nifi.groups.StandardProcessGroup PutDatabaseRecord[id=3d89b710-0190-1000-9e6a-91236db3bc5b] added to StandardProcessGroup[identifier=3c9c32ff-0190-1000-765b-ab7fbb284753,name=NiFi Flow]
+2024-06-21 22:22:34,209 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@36ae7655 // Another save pending = false
+2024-06-21 22:22:35,713 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@36ae7655 // Another save pending = false
+2024-06-21 22:22:37,726 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@36ae7655 // Another save pending = false
+2024-06-21 22:22:43,747 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@36ae7655 // Another save pending = false
+2024-06-21 22:22:44,767 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@36ae7655 // Another save pending = false
+2024-06-21 22:22:45,772 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@36ae7655 // Another save pending = false
+2024-06-21 22:22:48,575 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:22:48,576 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:23:08,576 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:23:08,576 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:23:27,248 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:23:27,248 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:23:28,577 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:23:28,577 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:23:48,578 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:23:48,580 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:24:08,581 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:24:08,581 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:24:27,280 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:24:27,280 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:24:28,582 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:24:28,582 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:24:48,582 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:24:48,583 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:25:08,583 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:25:08,583 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:25:15,101 INFO [NiFi Web Server-166] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.avro.AvroReader with identifier 3d8c2cd6-0190-1000-bd1c-f3661d553937
+2024-06-21 22:25:15,215 INFO [NiFi Web Server-166] o.a.nifi.groups.StandardProcessGroup StandardControllerServiceNode[service=AvroReader[id=3d8c2cd6-0190-1000-bd1c-f3661d553937], name=AvroReader, active=false] added to StandardProcessGroup[identifier=3c9c32ff-0190-1000-765b-ab7fbb284753,name=NiFi Flow]
+2024-06-21 22:25:15,329 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@36ae7655 // Another save pending = false
+2024-06-21 22:25:27,299 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:25:27,300 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:25:28,584 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:25:28,584 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:25:48,585 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:25:48,585 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:26:08,585 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:26:08,586 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:26:27,308 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:26:27,308 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.1 GB, bytes free = 188.58 GB, capacity = 227.68 GB
+2024-06-21 22:26:28,586 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:26:28,587 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:26:48,587 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:26:48,588 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:27:08,588 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:27:08,588 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:27:27,316 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-21 22:27:27,316 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 39.08 GB, bytes free = 188.6 GB, capacity = 227.68 GB
+2024-06-21 22:27:28,588 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-21 22:27:28,589 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-21 22:27:30,322 INFO [pool-1-thread-2] org.apache.nifi.BootstrapListener Received SHUTDOWN request from Bootstrap
+2024-06-21 22:27:30,322 INFO [pool-1-thread-2] org.apache.nifi.NiFi Application Server shutdown started
+2024-06-21 22:27:30,323 INFO [pool-1-thread-2] org.eclipse.jetty.server.Server Stopped oejs.Server@b5b9333{STOPPING}[12.0.9,sto=0]
+2024-06-21 22:27:30,329 INFO [pool-1-thread-2] o.eclipse.jetty.server.AbstractConnector Stopped ServerConnector@205baa58{SSL, (ssl, alpn, h2, http/1.1)}{nifi:8443}
+2024-06-21 22:27:30,354 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@65876774{nifi-error,/,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@471e3e69{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-error-2.0.0-M3.war}
+2024-06-21 22:27:30,376 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@44ca5127{nifi-web-frontend,/nf,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@582a24c3{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-frontend-2.0.0-M3.war}
+2024-06-21 22:27:30,383 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@26156929{nifi-docs,/nifi-docs,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@23fee93a{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-docs-2.0.0-M3.war}
+2024-06-21 22:27:30,405 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@39e347c{nifi-content-viewer,/nifi-content-viewer,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@19a3bfb5{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-content-viewer-2.0.0-M3.war}
+2024-06-21 22:27:30,415 INFO [pool-1-thread-2] o.a.n.w.c.ApplicationStartupContextListener Flow Service shutdown started
+2024-06-21 22:27:30,415 INFO [pool-1-thread-2] o.apache.nifi.controller.FlowController Initiating shutdown of FlowController...
+2024-06-21 22:27:30,423 INFO [pool-1-thread-2] o.apache.nifi.controller.FlowController Initiated graceful shutdown of flow controller...waiting up to 10 seconds
+2024-06-21 22:27:30,424 INFO [pool-1-thread-2] o.apache.nifi.controller.FlowController Controller has been terminated successfully.
+2024-06-21 22:27:30,425 INFO [pool-1-thread-2] o.apache.nifi.py4j.StandardPythonBridge Shutting down Python Server
+2024-06-21 22:27:30,425 INFO [pool-1-thread-2] org.apache.nifi.py4j.PythonProcess Shutting down Python Process Process[pid=181, exitValue="not exited"]
+2024-06-21 22:27:30,426 INFO [pool-1-thread-2] o.apache.nifi.py4j.StandardPythonBridge Successfully shutdown Python Server
+2024-06-21 22:27:30,428 INFO [Thread-61] org.apache.nifi.py4j.PythonProcess Python Process Process[pid=181, exitValue=137] exited with code 137
+2024-06-21 22:27:30,448 INFO [pool-1-thread-2] o.a.n.w.c.ApplicationStartupContextListener Flow Service shutdown completed
+2024-06-21 22:27:30,448 INFO [pool-1-thread-2] o.e.j.s.handler.ContextHandler._nifi_api Closing Spring root WebApplicationContext
+2024-06-21 22:27:30,476 INFO [pool-1-thread-2] o.a.n.a.service.EntityStoreAuditService Environment closed
+2024-06-21 22:27:30,511 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@13dc6649{nifi-api,/nifi-api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@225e09f0{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-api-2.0.0-M3.war}
+2024-06-21 22:27:30,568 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@30c01c37{nifi,/nifi,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@2913ca3e{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-ui-2.0.0-M3.war}
+2024-06-21 22:27:30,574 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@3407aa4f{nifi-standard-content-viewer,/nifi-standard-content-viewer-2.0.0-M3,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@ff0e6d4{STOPPED}}{./work/nar/extensions/nifi-standard-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-standard-content-viewer-2.0.0-M3.war}
+2024-06-21 22:27:30,583 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@36ad5f2a{/nifi-update-attribute-ui-2.0.0-M3,/nifi-update-attribute-ui-2.0.0-M3,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@a457c2b{STOPPED}}{./work/nar/extensions/nifi-update-attribute-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-update-attribute-ui-2.0.0-M3.war}
+2024-06-21 22:27:30,598 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@2b441e56{/nifi-jolt-transform-json-ui-2.0.0-M3,/nifi-jolt-transform-json-ui-2.0.0-M3,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@13e00016{STOPPED}}{./work/nar/extensions/nifi-jolt-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-jolt-transform-json-ui-2.0.0-M3.war}
+2024-06-21 22:27:30,604 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@8c0a23f{nifi-image-viewer,/nifi-image-viewer-2.0.0-M3,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@27f71195{STOPPED}}{./work/nar/extensions/nifi-image-viewer-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-image-viewer-2.0.0-M3.war}
+2024-06-21 22:27:30,606 INFO [pool-1-thread-2] org.apache.nifi.nar.NarAutoLoaderTask Stopping NAR Auto-loader
+2024-06-21 22:27:30,606 INFO [pool-1-thread-2] org.apache.nifi.nar.NarAutoLoader NAR Auto-Loader stopped
+2024-06-21 22:27:30,608 INFO [pool-1-thread-2] o.a.n.f.r.CompositeExternalResourceProviderService External Resource Provider Service is stopped
+2024-06-21 22:27:30,608 INFO [pool-1-thread-2] org.apache.nifi.NiFi Application Server shutdown completed
+2024-06-21 22:27:31,812 INFO [Thread-0] org.apache.nifi.NiFi Application Server shutdown started
+2024-06-21 22:27:31,812 INFO [Thread-0] org.apache.nifi.nar.NarAutoLoader NAR Auto-Loader stopped
+2024-06-21 22:27:31,812 INFO [Thread-0] o.a.n.f.r.CompositeExternalResourceProviderService External Resource Provider Service is stopped
+2024-06-21 22:27:31,812 INFO [Thread-0] org.apache.nifi.NiFi Application Server shutdown completed

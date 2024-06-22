@@ -29,6 +29,7 @@ services:
       - "6432:5432"
       - "222:22"
       - "2345:2345"
+      - "15432:5432"
     volumes:
       - type: volume
         source: pg-data

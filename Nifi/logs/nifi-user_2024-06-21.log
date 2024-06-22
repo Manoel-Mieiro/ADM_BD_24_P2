@@ -1,0 +1,8 @@
+2024-06-21 18:03:00,649 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2024-06-21 18:03:00,722 INFO [main] o.a.n.a.FileUserGroupProvider Creating new users file at /opt/nifi/nifi-current/./conf/users.xml
+2024-06-21 18:03:00,752 INFO [main] o.a.n.a.FileAccessPolicyProvider Creating new authorizations file at /opt/nifi/nifi-current/./conf/authorizations.xml
+2024-06-21 18:03:00,764 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2024-06-21 18:25:33,181 INFO [pool-1-thread-2] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2024-06-21 18:26:12,554 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2024-06-21 18:26:13,594 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2024-06-21 22:27:30,477 INFO [pool-1-thread-2] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer

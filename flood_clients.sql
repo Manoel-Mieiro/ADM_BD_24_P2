@@ -4,7 +4,7 @@ DECLARE
     i integer := 0;
 BEGIN
     -- Inserting 300000 rows
-    WHILE i < 300000 LOOP
+    WHILE i < 1000000 LOOP
         INSERT INTO clientes (
             nome,
             email,
