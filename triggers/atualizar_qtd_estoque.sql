@@ -1,11 +1,16 @@
--- Cria uma trigger que 'ouve' a tabela produto de forma a atualizar a coluna qtd_estoque de sua tabela.
 CREATE OR REPLACE FUNCTION updt_available_prod() RETURNS TRIGGER AS $$
 DECLARE
-    qtd smallint; --é smallint porque há outra tirgger que impede mais de 300 linhas 
+    qtd smallint;
 BEGIN
-    SELECT COUNT(local) FROM produtos INTO qtd WHERE local = new.local;
-    UPDATE produtos SET quantidade_estoque = qtd;
-	RETURN NEW.quantidade_estoque;
+    SELECT COUNT(*) INTO qtd
+    FROM produtos
+    WHERE local = NEW.local;
+
+    UPDATE produtos
+    SET quantidade_estoque = qtd
+    WHERE local = NEW.local;
+
+    RETURN NEW;  
 END;
 $$ LANGUAGE PLPGSQL;
 
