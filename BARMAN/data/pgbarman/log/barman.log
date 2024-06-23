@@ -24373,3 +24373,244 @@ Permission denied, please try again.
 2024-06-23 12:18:23,761 [56] barman.server DEBUG: Starting check: 'systemid coherence (WAL streaming)'
 2024-06-23 12:18:23,761 [56] barman.server DEBUG: Check 'systemid coherence (WAL streaming)' succeeded for server 'postgres'
 2024-06-23 12:18:23,809 [56] barman.server ERROR: Impossible to start WAL streaming. Check the log for more details, or run 'barman check postgres'
+2024-06-23 12:19:02,239 [60] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:19:02,241 [60] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:19:02,247 [60] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'cron', 'keep_descriptors': False, 'func': <function cron at 0x7fe39d8d4378>})
+2024-06-23 12:19:02,259 [60] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:19:02,259 [60] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:19:02,260 [60] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'archive-wal', 'postgres']
+2024-06-23 12:19:02,263 [60] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 61
+2024-06-23 12:19:02,264 [60] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'receive-wal', 'postgres']
+2024-06-23 12:19:02,268 [60] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 62
+2024-06-23 12:19:02,271 [60] barman.retention_policies DEBUG: Reporting backup 20240621T000747 for server postgres as VALID (newer than 2024-06-16 12:19:02.271599+00:00)
+2024-06-23 12:19:02,272 [60] barman.utils INFO: Cleaning up lockfiles directory.
+2024-06-23 12:19:02,272 [60] barman.utils DEBUG: deleting /backup/barman/.postgres-archive-wal.lock
+2024-06-23 12:19:02,273 [60] barman.utils DEBUG: /backup/barman/.postgres-archive-wal.lock deleted
+2024-06-23 12:19:02,273 [60] barman.utils DEBUG: deleting /backup/barman/.postgres-receive-wal.lock
+2024-06-23 12:19:02,273 [60] barman.utils DEBUG: /backup/barman/.postgres-receive-wal.lock deleted
+2024-06-23 12:19:02,273 [60] barman.utils DEBUG: deleting /backup/barman/.config-update.lock
+2024-06-23 12:19:02,273 [60] barman.utils DEBUG: /backup/barman/.config-update.lock deleted
+2024-06-23 12:19:02,274 [60] barman.utils DEBUG: deleting /backup/barman/.postgres-cron.lock
+2024-06-23 12:19:02,274 [60] barman.utils DEBUG: /backup/barman/.postgres-cron.lock deleted
+2024-06-23 12:19:02,548 [61] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:19:02,549 [61] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:19:02,549 [61] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'archive-wal', 'config': '/etc/barman.conf', 'server_name': 'postgres', 'func': <function archive_wal at 0x7f6af29a3b70>})
+2024-06-23 12:19:02,560 [61] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:19:02,560 [61] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:19:02,569 [62] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:19:02,570 [62] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:19:02,570 [62] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'receive-wal', 'config': '/etc/barman.conf', 'stop': False, 'reset': False, 'create_slot': False, 'drop_slot': False, 'server_name': 'postgres', 'func': <function receive_wal at 0x7f9e28e41c80>})
+2024-06-23 12:19:02,581 [62] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:19:02,581 [62] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:19:02,583 [61] barman.server DEBUG: Starting archive-wal for server postgres
+2024-06-23 12:19:02,584 [61] barman.wal_archiver INFO: No xlog segments found from streaming for postgres.
+2024-06-23 12:19:02,584 [61] barman.wal_archiver INFO: No xlog segments found from file archival for postgres.
+2024-06-23 12:19:05,647 [62] barman.postgres WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:19:08,719 [62] barman.postgres WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:19:08,720 [62] barman.command_wrappers DEBUG: Command: ['/usr/bin/pg_receivewal', '--version']
+2024-06-23 12:19:08,782 [62] Command DEBUG: pg_receivewal (PostgreSQL) 16.3 (Debian 16.3-1.pgdg100+1)
+2024-06-23 12:19:08,783 [62] barman.command_wrappers DEBUG: Command return code: 0
+2024-06-23 12:19:08,783 [62] barman.command_wrappers DEBUG: Command stdout: pg_receivewal (PostgreSQL) 16.3 (Debian 16.3-1.pgdg100+1)
+
+2024-06-23 12:19:08,783 [62] barman.command_wrappers DEBUG: Command stderr: 
+2024-06-23 12:19:11,855 [62] barman.postgres DEBUG: Error retrieving PostgreSQL version: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:19:14,927 [62] barman.postgres DEBUG: Error retrieving PostgreSQL setting 'archive_mode': connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:19:17,999 [62] barman.postgres DEBUG: Error retrieving PostgreSQL setting 'archive_command': connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:19:21,071 [62] barman.postgres DEBUG: Error retrieving pg_stat_archive data: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:19:24,143 [62] barman.backup_executor WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:19:24,143 [62] barman.server DEBUG: Starting check: 'has monitoring privileges (WAL streaming)'
+2024-06-23 12:19:24,143 [62] barman.server ERROR: Check 'no access to monitoring functions' failed for server 'postgres'
+2024-06-23 12:19:24,144 [62] barman.server DEBUG: Starting check: 'PostgreSQL streaming (WAL streaming)'
+2024-06-23 12:19:24,144 [62] barman.server ERROR: Check 'PostgreSQL streaming (WAL streaming)' failed for server 'postgres'
+2024-06-23 12:19:24,144 [62] barman.server DEBUG: Starting check: 'systemid coherence (WAL streaming)'
+2024-06-23 12:19:24,144 [62] barman.server DEBUG: Check 'systemid coherence (WAL streaming)' succeeded for server 'postgres'
+2024-06-23 12:19:24,177 [62] barman.server ERROR: Impossible to start WAL streaming. Check the log for more details, or run 'barman check postgres'
+2024-06-23 12:20:01,607 [66] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:20:01,608 [66] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:20:01,611 [66] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'cron', 'keep_descriptors': False, 'func': <function cron at 0x7f668bfb2378>})
+2024-06-23 12:20:01,623 [66] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:20:01,623 [66] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:20:01,624 [66] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'archive-wal', 'postgres']
+2024-06-23 12:20:01,628 [66] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 67
+2024-06-23 12:20:01,629 [66] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'receive-wal', 'postgres']
+2024-06-23 12:20:01,633 [66] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 68
+2024-06-23 12:20:01,637 [66] barman.retention_policies DEBUG: Reporting backup 20240621T000747 for server postgres as VALID (newer than 2024-06-16 12:20:01.636916+00:00)
+2024-06-23 12:20:01,637 [66] barman.utils INFO: Cleaning up lockfiles directory.
+2024-06-23 12:20:01,638 [66] barman.utils DEBUG: deleting /backup/barman/.postgres-archive-wal.lock
+2024-06-23 12:20:01,638 [66] barman.utils DEBUG: /backup/barman/.postgres-archive-wal.lock deleted
+2024-06-23 12:20:01,638 [66] barman.utils DEBUG: deleting /backup/barman/.postgres-receive-wal.lock
+2024-06-23 12:20:01,638 [66] barman.utils DEBUG: /backup/barman/.postgres-receive-wal.lock deleted
+2024-06-23 12:20:01,639 [66] barman.utils DEBUG: deleting /backup/barman/.config-update.lock
+2024-06-23 12:20:01,639 [66] barman.utils DEBUG: /backup/barman/.config-update.lock deleted
+2024-06-23 12:20:01,639 [66] barman.utils DEBUG: deleting /backup/barman/.postgres-cron.lock
+2024-06-23 12:20:01,639 [66] barman.utils DEBUG: /backup/barman/.postgres-cron.lock deleted
+2024-06-23 12:20:01,915 [67] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:20:01,916 [67] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:20:01,917 [67] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'archive-wal', 'config': '/etc/barman.conf', 'server_name': 'postgres', 'func': <function archive_wal at 0x7f5ead338b70>})
+2024-06-23 12:20:01,928 [67] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:20:01,928 [67] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:20:01,934 [68] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:20:01,935 [68] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:20:01,935 [68] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'receive-wal', 'config': '/etc/barman.conf', 'stop': False, 'reset': False, 'create_slot': False, 'drop_slot': False, 'server_name': 'postgres', 'func': <function receive_wal at 0x7f4d5c2eec80>})
+2024-06-23 12:20:01,946 [68] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:20:01,946 [68] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:20:01,952 [67] barman.server DEBUG: Starting archive-wal for server postgres
+2024-06-23 12:20:01,953 [67] barman.wal_archiver INFO: No xlog segments found from streaming for postgres.
+2024-06-23 12:20:01,953 [67] barman.wal_archiver INFO: No xlog segments found from file archival for postgres.
+2024-06-23 12:20:05,007 [68] barman.postgres WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:20:08,079 [68] barman.postgres WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:20:08,080 [68] barman.command_wrappers DEBUG: Command: ['/usr/bin/pg_receivewal', '--version']
+2024-06-23 12:20:08,142 [68] Command DEBUG: pg_receivewal (PostgreSQL) 16.3 (Debian 16.3-1.pgdg100+1)
+2024-06-23 12:20:08,143 [68] barman.command_wrappers DEBUG: Command return code: 0
+2024-06-23 12:20:08,143 [68] barman.command_wrappers DEBUG: Command stdout: pg_receivewal (PostgreSQL) 16.3 (Debian 16.3-1.pgdg100+1)
+
+2024-06-23 12:20:08,143 [68] barman.command_wrappers DEBUG: Command stderr: 
+2024-06-23 12:20:11,215 [68] barman.postgres DEBUG: Error retrieving PostgreSQL version: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:20:14,287 [68] barman.postgres DEBUG: Error retrieving PostgreSQL setting 'archive_mode': connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:20:17,359 [68] barman.postgres DEBUG: Error retrieving PostgreSQL setting 'archive_command': connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:20:20,431 [68] barman.postgres DEBUG: Error retrieving pg_stat_archive data: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:20:23,503 [68] barman.backup_executor WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:20:23,504 [68] barman.server DEBUG: Starting check: 'has monitoring privileges (WAL streaming)'
+2024-06-23 12:20:23,505 [68] barman.server ERROR: Check 'no access to monitoring functions' failed for server 'postgres'
+2024-06-23 12:20:23,505 [68] barman.server DEBUG: Starting check: 'PostgreSQL streaming (WAL streaming)'
+2024-06-23 12:20:23,505 [68] barman.server ERROR: Check 'PostgreSQL streaming (WAL streaming)' failed for server 'postgres'
+2024-06-23 12:20:23,505 [68] barman.server DEBUG: Starting check: 'systemid coherence (WAL streaming)'
+2024-06-23 12:20:23,506 [68] barman.server DEBUG: Check 'systemid coherence (WAL streaming)' succeeded for server 'postgres'
+2024-06-23 12:20:23,554 [68] barman.server ERROR: Impossible to start WAL streaming. Check the log for more details, or run 'barman check postgres'
+2024-06-23 12:21:01,970 [72] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:21:01,971 [72] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:21:01,971 [72] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'cron', 'keep_descriptors': False, 'func': <function cron at 0x7ff53e4f1378>})
+2024-06-23 12:21:01,982 [72] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:21:01,983 [72] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:21:01,983 [72] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'archive-wal', 'postgres']
+2024-06-23 12:21:01,987 [72] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 73
+2024-06-23 12:21:01,988 [72] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'receive-wal', 'postgres']
+2024-06-23 12:21:01,991 [72] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 74
+2024-06-23 12:21:01,995 [72] barman.retention_policies DEBUG: Reporting backup 20240621T000747 for server postgres as VALID (newer than 2024-06-16 12:21:01.995333+00:00)
+2024-06-23 12:21:01,995 [72] barman.utils INFO: Cleaning up lockfiles directory.
+2024-06-23 12:21:01,996 [72] barman.utils DEBUG: deleting /backup/barman/.postgres-archive-wal.lock
+2024-06-23 12:21:01,996 [72] barman.utils DEBUG: /backup/barman/.postgres-archive-wal.lock deleted
+2024-06-23 12:21:01,997 [72] barman.utils DEBUG: deleting /backup/barman/.postgres-receive-wal.lock
+2024-06-23 12:21:01,997 [72] barman.utils DEBUG: /backup/barman/.postgres-receive-wal.lock deleted
+2024-06-23 12:21:01,997 [72] barman.utils DEBUG: deleting /backup/barman/.config-update.lock
+2024-06-23 12:21:01,997 [72] barman.utils DEBUG: /backup/barman/.config-update.lock deleted
+2024-06-23 12:21:01,997 [72] barman.utils DEBUG: deleting /backup/barman/.postgres-cron.lock
+2024-06-23 12:21:01,998 [72] barman.utils DEBUG: /backup/barman/.postgres-cron.lock deleted
+2024-06-23 12:21:02,277 [73] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:21:02,279 [73] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:21:02,279 [73] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'archive-wal', 'config': '/etc/barman.conf', 'server_name': 'postgres', 'func': <function archive_wal at 0x7f567ded7b70>})
+2024-06-23 12:21:02,289 [73] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:21:02,289 [73] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:21:02,294 [74] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:21:02,295 [74] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:21:02,295 [74] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'receive-wal', 'config': '/etc/barman.conf', 'stop': False, 'reset': False, 'create_slot': False, 'drop_slot': False, 'server_name': 'postgres', 'func': <function receive_wal at 0x7f5bf05f2c80>})
+2024-06-23 12:21:02,306 [74] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:21:02,306 [74] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:21:02,313 [73] barman.server DEBUG: Starting archive-wal for server postgres
+2024-06-23 12:21:02,313 [73] barman.wal_archiver INFO: No xlog segments found from streaming for postgres.
+2024-06-23 12:21:02,314 [73] barman.wal_archiver INFO: No xlog segments found from file archival for postgres.
+2024-06-23 12:21:05,359 [74] barman.postgres WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:21:08,431 [74] barman.postgres WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:21:08,431 [74] barman.command_wrappers DEBUG: Command: ['/usr/bin/pg_receivewal', '--version']
+2024-06-23 12:21:08,484 [74] Command DEBUG: pg_receivewal (PostgreSQL) 16.3 (Debian 16.3-1.pgdg100+1)
+2024-06-23 12:21:08,485 [74] barman.command_wrappers DEBUG: Command return code: 0
+2024-06-23 12:21:08,485 [74] barman.command_wrappers DEBUG: Command stdout: pg_receivewal (PostgreSQL) 16.3 (Debian 16.3-1.pgdg100+1)
+
+2024-06-23 12:21:08,485 [74] barman.command_wrappers DEBUG: Command stderr: 
+2024-06-23 12:21:11,567 [74] barman.postgres DEBUG: Error retrieving PostgreSQL version: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:21:14,639 [74] barman.postgres DEBUG: Error retrieving PostgreSQL setting 'archive_mode': connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:21:17,711 [74] barman.postgres DEBUG: Error retrieving PostgreSQL setting 'archive_command': connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:21:20,783 [74] barman.postgres DEBUG: Error retrieving pg_stat_archive data: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:21:23,855 [74] barman.backup_executor WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:21:23,856 [74] barman.server DEBUG: Starting check: 'has monitoring privileges (WAL streaming)'
+2024-06-23 12:21:23,856 [74] barman.server ERROR: Check 'no access to monitoring functions' failed for server 'postgres'
+2024-06-23 12:21:23,857 [74] barman.server DEBUG: Starting check: 'PostgreSQL streaming (WAL streaming)'
+2024-06-23 12:21:23,857 [74] barman.server ERROR: Check 'PostgreSQL streaming (WAL streaming)' failed for server 'postgres'
+2024-06-23 12:21:23,857 [74] barman.server DEBUG: Starting check: 'systemid coherence (WAL streaming)'
+2024-06-23 12:21:23,857 [74] barman.server DEBUG: Check 'systemid coherence (WAL streaming)' succeeded for server 'postgres'
+2024-06-23 12:21:23,905 [74] barman.server ERROR: Impossible to start WAL streaming. Check the log for more details, or run 'barman check postgres'
+2024-06-23 12:22:01,325 [78] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:22:01,326 [78] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:22:01,326 [78] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'cron', 'keep_descriptors': False, 'func': <function cron at 0x7f172ba5f378>})
+2024-06-23 12:22:01,338 [78] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:22:01,338 [78] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:22:01,338 [78] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'archive-wal', 'postgres']
+2024-06-23 12:22:01,342 [78] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 79
+2024-06-23 12:22:01,342 [78] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'receive-wal', 'postgres']
+2024-06-23 12:22:01,346 [78] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 80
+2024-06-23 12:22:01,349 [78] barman.retention_policies DEBUG: Reporting backup 20240621T000747 for server postgres as VALID (newer than 2024-06-16 12:22:01.349754+00:00)
+2024-06-23 12:22:01,350 [78] barman.utils INFO: Cleaning up lockfiles directory.
+2024-06-23 12:22:01,351 [78] barman.utils DEBUG: deleting /backup/barman/.postgres-archive-wal.lock
+2024-06-23 12:22:01,351 [78] barman.utils DEBUG: /backup/barman/.postgres-archive-wal.lock deleted
+2024-06-23 12:22:01,351 [78] barman.utils DEBUG: deleting /backup/barman/.postgres-receive-wal.lock
+2024-06-23 12:22:01,351 [78] barman.utils DEBUG: /backup/barman/.postgres-receive-wal.lock deleted
+2024-06-23 12:22:01,351 [78] barman.utils DEBUG: deleting /backup/barman/.config-update.lock
+2024-06-23 12:22:01,352 [78] barman.utils DEBUG: /backup/barman/.config-update.lock deleted
+2024-06-23 12:22:01,352 [78] barman.utils DEBUG: deleting /backup/barman/.postgres-cron.lock
+2024-06-23 12:22:01,352 [78] barman.utils DEBUG: /backup/barman/.postgres-cron.lock deleted
+2024-06-23 12:22:01,661 [79] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:22:01,662 [79] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:22:01,662 [79] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'archive-wal', 'config': '/etc/barman.conf', 'server_name': 'postgres', 'func': <function archive_wal at 0x7f648bb99b70>})
+2024-06-23 12:22:01,673 [79] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:22:01,673 [79] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:22:01,683 [80] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:22:01,684 [80] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:22:01,684 [80] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'receive-wal', 'config': '/etc/barman.conf', 'stop': False, 'reset': False, 'create_slot': False, 'drop_slot': False, 'server_name': 'postgres', 'func': <function receive_wal at 0x7fe3c88edc80>})
+2024-06-23 12:22:01,696 [80] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:22:01,696 [80] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:22:01,698 [79] barman.server DEBUG: Starting archive-wal for server postgres
+2024-06-23 12:22:01,699 [79] barman.wal_archiver INFO: No xlog segments found from streaming for postgres.
+2024-06-23 12:22:01,699 [79] barman.wal_archiver INFO: No xlog segments found from file archival for postgres.
+2024-06-23 12:22:04,751 [80] barman.postgres WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:22:07,823 [80] barman.postgres WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:22:07,824 [80] barman.command_wrappers DEBUG: Command: ['/usr/bin/pg_receivewal', '--version']
+2024-06-23 12:22:07,881 [80] Command DEBUG: pg_receivewal (PostgreSQL) 16.3 (Debian 16.3-1.pgdg100+1)
+2024-06-23 12:22:07,882 [80] barman.command_wrappers DEBUG: Command return code: 0
+2024-06-23 12:22:07,883 [80] barman.command_wrappers DEBUG: Command stdout: pg_receivewal (PostgreSQL) 16.3 (Debian 16.3-1.pgdg100+1)
+
+2024-06-23 12:22:07,883 [80] barman.command_wrappers DEBUG: Command stderr: 
+2024-06-23 12:22:10,959 [80] barman.postgres DEBUG: Error retrieving PostgreSQL version: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:22:14,031 [80] barman.postgres DEBUG: Error retrieving PostgreSQL setting 'archive_mode': connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:22:17,103 [80] barman.postgres DEBUG: Error retrieving PostgreSQL setting 'archive_command': connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:22:20,175 [80] barman.postgres DEBUG: Error retrieving pg_stat_archive data: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:22:23,247 [80] barman.backup_executor WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
+2024-06-23 12:22:23,248 [80] barman.server DEBUG: Starting check: 'has monitoring privileges (WAL streaming)'
+2024-06-23 12:22:23,248 [80] barman.server ERROR: Check 'no access to monitoring functions' failed for server 'postgres'
+2024-06-23 12:22:23,248 [80] barman.server DEBUG: Starting check: 'PostgreSQL streaming (WAL streaming)'
+2024-06-23 12:22:23,249 [80] barman.server ERROR: Check 'PostgreSQL streaming (WAL streaming)' failed for server 'postgres'
+2024-06-23 12:22:23,249 [80] barman.server DEBUG: Starting check: 'systemid coherence (WAL streaming)'
+2024-06-23 12:22:23,249 [80] barman.server DEBUG: Check 'systemid coherence (WAL streaming)' succeeded for server 'postgres'
+2024-06-23 12:22:23,298 [80] barman.server ERROR: Impossible to start WAL streaming. Check the log for more details, or run 'barman check postgres'
+2024-06-23 12:23:01,683 [84] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:23:01,684 [84] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:23:01,687 [84] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'cron', 'keep_descriptors': False, 'func': <function cron at 0x7f12bfa52378>})
+2024-06-23 12:23:01,699 [84] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:23:01,699 [84] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:23:01,699 [84] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'archive-wal', 'postgres']
+2024-06-23 12:23:01,703 [84] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 85
+2024-06-23 12:23:01,704 [84] barman.command_wrappers DEBUG: BarmanSubProcess: ['/usr/bin/python3', '/usr/bin/barman', '-c', '/etc/barman.conf', '-q', 'receive-wal', 'postgres']
+2024-06-23 12:23:01,708 [84] barman.command_wrappers DEBUG: BarmanSubProcess: subprocess started. pid: 86
+2024-06-23 12:23:01,712 [84] barman.retention_policies DEBUG: Reporting backup 20240621T000747 for server postgres as VALID (newer than 2024-06-16 12:23:01.711918+00:00)
+2024-06-23 12:23:01,712 [84] barman.utils INFO: Cleaning up lockfiles directory.
+2024-06-23 12:23:01,713 [84] barman.utils DEBUG: deleting /backup/barman/.postgres-archive-wal.lock
+2024-06-23 12:23:01,713 [84] barman.utils DEBUG: /backup/barman/.postgres-archive-wal.lock deleted
+2024-06-23 12:23:01,713 [84] barman.utils DEBUG: deleting /backup/barman/.postgres-receive-wal.lock
+2024-06-23 12:23:01,713 [84] barman.utils DEBUG: /backup/barman/.postgres-receive-wal.lock deleted
+2024-06-23 12:23:01,714 [84] barman.utils DEBUG: deleting /backup/barman/.config-update.lock
+2024-06-23 12:23:01,714 [84] barman.utils DEBUG: /backup/barman/.config-update.lock deleted
+2024-06-23 12:23:01,714 [84] barman.utils DEBUG: deleting /backup/barman/.postgres-cron.lock
+2024-06-23 12:23:01,714 [84] barman.utils DEBUG: /backup/barman/.postgres-cron.lock deleted
+2024-06-23 12:23:01,996 [85] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:23:01,997 [85] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:23:01,997 [85] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'archive-wal', 'config': '/etc/barman.conf', 'server_name': 'postgres', 'func': <function archive_wal at 0x7fdafb4acb70>})
+2024-06-23 12:23:02,008 [85] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:23:02,008 [85] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:23:02,020 [86] barman.config DEBUG: Including configuration file: postgres-source-db.conf
+2024-06-23 12:23:02,021 [86] barman.config WARNING: Discarding configuration file: .barman.auto.conf (not a file)
+2024-06-23 12:23:02,022 [86] barman.cli DEBUG: Initialised Barman version 3.10.0 (config: /etc/barman.conf, args: {'color': 'auto', 'quiet': True, 'debug': False, 'format': 'console', 'command': 'receive-wal', 'config': '/etc/barman.conf', 'stop': False, 'reset': False, 'create_slot': False, 'drop_slot': False, 'server_name': 'postgres', 'func': <function receive_wal at 0x7f3635eb2c80>})
+2024-06-23 12:23:02,033 [86] barman.server DEBUG: Retention policy for server postgres: RECOVERY WINDOW OF 1 WEEKS
+2024-06-23 12:23:02,033 [85] barman.server DEBUG: Starting archive-wal for server postgres
+2024-06-23 12:23:02,033 [86] barman.server DEBUG: WAL retention policy for server postgres: MAIN
+2024-06-23 12:23:02,033 [85] barman.wal_archiver INFO: No xlog segments found from streaming for postgres.
+2024-06-23 12:23:02,034 [85] barman.wal_archiver INFO: No xlog segments found from file archival for postgres.
+2024-06-23 12:23:05,103 [86] barman.postgres WARNING: Error retrieving PostgreSQL status: connection to server at "postgres" (192.168.1.5), port 6432 failed: No route to host
